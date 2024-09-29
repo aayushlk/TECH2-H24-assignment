@@ -4,6 +4,7 @@ TECH2 mandatory assignment - Part A
 Write the implementation of part A of the exercise below.
 """
 import math
+import numpy as np
 
 def std_loops(x):
     """
@@ -58,4 +59,9 @@ def std_builtin(x):
     sd=math.sqrt(var)
     return sd
 
+num_lst=[1,2,3,4,5]
+loops=std_loops(num_lst)
+func=std_builtin(num_lst)
+real=np.std(num_lst)
 
+print(loops,func,real)
